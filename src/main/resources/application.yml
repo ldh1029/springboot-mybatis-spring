@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    name: test
+    url: jdbc:mysql://127.0.0.1:3306/springboot
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:**/mapper/*.xml
+  type-aliases-package: com.example.demo.entity
+logging:
+  config: classpath:logback-spring.xml
+
